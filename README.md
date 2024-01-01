@@ -54,30 +54,30 @@ Request body example in json format:
 
 <li>PUT /api/note/{id}/: Update an existing note by ID.<br> Request body example (update title and body):
 
-        {
-          "title": "Updated Title",
-          "body": "Updated Body"
-        }
+    {
+        "title": "Updated Title",
+        "body": "Updated Body"
+    }
 
 <li>DELETE /api/note/{id}/: Delete a note by ID.
 
 ### Authentication
 
 The API currently uses basic authorization.<br>Ensure that you have the necessary permissions to perform CRUD operations.<br><br>
-<b>Example Usage</b><br>
-Retrieving all notes:
+## Example Usage
+### Retrieving all notes:
 
     curl http://localhost:8000/api/note/
 
-Creating a new note:
+### Creating a new note:
 
     curl -X POST -H "Content-Type: application/json" -d '{"title": "New Note", "body": "This is a new note."}' http://localhost:8000/api/note/
 
-<b>Updating a note:</b>
+### Updating a note:
 
     curl -X PUT -H "Content-Type: application/json" -d '{"title": "Updated Title", "body": "Updated body content."}' http://localhost:8000/api/note/{id}/
 
-<b>Deleting a note:</b>
+### Deleting a note:
 
     curl -X DELETE http://localhost:8000/api/note/{id}/
 
