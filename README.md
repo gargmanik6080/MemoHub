@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Django API serves as a simple notes application, allowing users to create, retrieve, update, and delete notes through a RESTful interface. The API is built using the Tastypie library for Django.
+This Django API serves as a simple notes taking application, allowing users to create, retrieve, update, and delete notes through a RESTful interface. The API is built using the Tastypie library for Django.
 
 ## Getting Started
 
@@ -42,9 +42,9 @@ Start the Django development server:
 The API will be accessible at http://localhost:8000/api/.\
 ### API Usage Endpoints
 
-<li>GET /api/note/: Retrieve a list of all notes.
-<li>GET /api/note/{id}/: Retrieve details of a specific note by ID.
-<li>POST /api/note/: Create a new note.<br>
+ - GET /api/note/: Retrieve a list of all notes.
+ - GET /api/note/{id}/: Retrieve details of a specific note by ID.
+ - POST /api/note/: Create a new note.<br>
 Request body example in json format:
 
     {
@@ -52,14 +52,14 @@ Request body example in json format:
         "body": "Note Body"
     }
 
-<li>PUT /api/note/{id}/: Update an existing note by ID.<br> Request body example (update title and body):
+ - PUT /api/note/{id}/: Update an existing note by ID.<br> Request body example (update title and body):
 
     {
         "title": "Updated Title",
         "body": "Updated Body"
     }
 
-<li>DELETE /api/note/{id}/: Delete a note by ID.
+ - DELETE /api/note/{id}/: Delete a note by ID.
 
 ### Authentication
 
