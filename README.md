@@ -63,7 +63,7 @@ Request body example in json format:
 
 ### Authentication
 
-The API currently uses basic authorization.<br>Ensure that you have the necessary permissions to perform CRUD operations.<br><br>
+The API currently uses basic authorization.<br>Ensure that you have the necessary permissions to perform CRUD operations.
 ## Example Usage
 ### Retrieving all notes:
 
